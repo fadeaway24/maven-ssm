@@ -46,7 +46,7 @@ public class UserController {
         if (!file.isEmpty()) {
             logger.info("Process file:{}",file.getOriginalFilename());
         }
-        FileUtils.copyInputStreamToFile(file.getInputStream(), new File("F:\\ssm-upload",System.currentTimeMillis()+file.getOriginalFilename()));
+        FileUtils.copyInputStreamToFile(file.getInputStream(), new File("F:\\fileUpload",System.currentTimeMillis()+file.getOriginalFilename()));
         return "success";
     }
 }
