@@ -26,11 +26,11 @@ public class TestMyBatis {
     @Autowired
     private UserService userService;
 
-    @Test
-    public void test1(){
-        User user = userService.getUserById(2);
-        logger.info(JSON.toJSONString(user));
-    }
+//    @Test
+//    public void test1(){
+//        User user = userService.getUserById(2);
+//        logger.info(JSON.toJSONString(user));
+//    }
 
 
     @Test
