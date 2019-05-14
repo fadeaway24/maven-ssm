@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
 
     public User getUserById(int userId){
         User user = userDao.selectByPrimaryKey(userId);
-        if (user != null){
+        if (user == null){
             throw new BusiException(HttpCode.BUSINESS_LOGIC_NOT_PASS.getCode(),HttpCode.BUSINESS_LOGIC_NOT_PASS.getMsg());
         }
         System.out.println("userName:"+ user.getUserName());
